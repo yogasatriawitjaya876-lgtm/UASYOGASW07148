@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami | GenSpeedShop.ID</title>
+    <link rel="stylesheet" href="css/kontak.css">
+    <script type="text/JavaScript" src="js/atur1.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">GenSpeedShop<span>.ID</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html#Beranda">Beranda</a></li>
+            <li><a href="produk.html#produk">Produk</a></li>
+            <li><a href="promo.html#promo">Promo</a></li>
+            <li><a href="tentangkami.html#tentang kami">Tentang Kami</a></li>
+            <li><a href="kontak.html#kontak" class="aktif">Kontak</a></li>
+            <li><a href="FAQ.html#FAQ" class="aktif">FAQ</a></li>
+            <li><a href="keranjang.php#keranjang" class="aktif">keranjang</a></li>
+        </ul>
+        <div class="menu-toggle">&#9776;</div>
+    </nav>
+
+    <!-- Kontak Section -->
+    <section class="kontak-page">
+        <h1>Hubungi Kami</h1>
+        <p>Butuh bantuan? Silakan kirim pesan atau kunjungi kami langsung di toko.</p>
+
+        <div class="kontak-container">
+
+            <!-- Info -->
+            <div class="kontak-info">
+                <h2>Informasi Kontak</h2>
+                <p><strong>Alamat:</strong> 2G59+CW9, Karangsari, Sidosari, Kec. Kesesi, Kabupaten Pekalongan, Jawa
+                    Tengah 51162</p>
+                <p><strong>Telepon:</strong> 085642552521</p>
+                <p><strong>Email:</strong> genspeedshop@gmail.com</p>
+                <p><strong>Jam Operasional:</strong><br>
+                    Senin - Sabtu: 09.00 - 00.00 WIB</p>
+
+                <div class="sosial">
+                    <a href="https://www.instagram.com/yogyz0/"> Instagram Admin</a>
+                    <a href="#"> WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div class="kontak-form">
+                <h2>Kirim Pesan</h2>
+                <form action="#" method="POST">
+                    <input type="text" placeholder="Nama Lengkap" required>
+                    <input type="email" placeholder="Email Anda" required>
+                    <input type="tel" placeholder="Nomor Telepon">
+                    <textarea placeholder="Tulis pesan Anda..." rows="5" required></textarea>
+                    <button type="submit" class="btn-kirim">Kirim Pesan</button>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- Lokasi Toko -->
+        <div class="map">
+            <h2>Lokasi Kami</h2>
+            <iframe src="https://maps.app.goo.gl/ZT3KdREfCMB1wH7B6" width="100%" height="350" style="border:0;"
+                allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+    </section>
+
+    <footer>
+        © 2025 GenSpeedShop.ID | Toko Aksesoris Motor Terbaik. Semua Hak Dilindungi | By: Yoga Satria Witjaya Nim :
+        A12.2024.07148 |<span id="clock"></span>
+    </footer>
+
+    <script>
+        // Toggle menu responsif
+        const toggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+
+</html>

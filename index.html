@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GenSpeedShop.ID - Toko Aksesoris Motor Terbaik</title>
+  <link rel="stylesheet" href="css\index.css" />
+  <script type="text/JavaScript"src="js/atur1.js"></script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">GenSpeedShop<span>.ID</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html#Beranda">Beranda</a></li>
+      <li><a href="produk.html#produk">Produk</a></li>
+      <li><a href="promo.html#promo">Promo</a></li>
+      <li><a href="tentangkami.html#tentang kami">Tentang Kami</a></li>
+      <li><a href="kontak.html#kontak" class="aktif">Kontak</a></li>
+      <li><a href="FAQ.html#FAQ" class="aktif">FAQ</a></li>
+      <li><a href="keranjang.php#keranjang" class="aktif">keranjang</a></li>
+
+    </ul>
+    <div class="menu-toggle">&#9776;</div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero fade-in">
+    <div class="hero-content">
+      <h1>Upgrade Gaya & Performa Motor Kamu !</h1>
+      <p>Toko aksesoris motor terbaik dengan produk berkualitas tinggi untuk setiap pengendara sejati.</p>
+      <a href="produk.html" class="btn-utama">Mulai Jelajah</a>
+    </div>
+  </section>
+
+  <!-- Highlight Section -->
+  <section class="highlight">
+    <div class="highlight-box slide-up">
+      <h2>⚙️ Kualitas Premium</h2>
+      <p>Diproduksi dengan material terbaik untuk performa maksimal.</p>
+    </div>
+    <div class="highlight-box slide-up">
+      <h2>💸 Harga Bersahabat</h2>
+      <p>Produk berkualitas tinggi dengan harga terjangkau.</p>
+    </div>
+    <div class="highlight-box slide-up">
+      <h2>🚚 Pengiriman Cepat</h2>
+      <p>Antar langsung ke seluruh Indonesia dengan layanan terpercaya.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 GenSpeedShop.ID | Toko Aksesoris Motor Terbaik. Semua Hak Dilindungi | By: Yoga Satria Witjaya Nim : A12.2024.07148 | <span id="clock"></span>
+  </footer>
+
+  <script>
+    //  menu responsif
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Animasi (fade-in dan slide-up)
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    });
+
+    const hiddenElements = document.querySelectorAll('.fade-in, .slide-up');
+    hiddenElements.forEach(el => observer.observe(el));
+  </script>
+</body>
+
+</html>
