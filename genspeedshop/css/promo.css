@@ -1,0 +1,217 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    background-color: #111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #facc15;
+}
+.logo span {
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover, .nav-links .active {
+    color: #facc15;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* ===== HERO PROMO ===== */
+.hero-promo {
+    background: linear-gradient(to right, #111, #444);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-promo h1 {
+    font-size: 40px;
+    color: #facc15;
+}
+
+.hero-promo p {
+    margin: 15px auto;
+    max-width: 700px;
+    font-size: 18px;
+    color: #ddd;
+}
+
+.btn-utama {
+    background-color: #facc15;
+    color: #111;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-utama:hover {
+    background-color: #ffe34d;
+}
+
+/* ===== PROMO SECTION ===== */
+.promo-section {
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.promo-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.promo-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: left;
+}
+
+.card-content h3 {
+    font-size: 18px;
+    color: #111;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0 10px;
+}
+
+.harga-promo {
+    color: #facc15;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.btn-beli {
+    background-color: #111;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-beli:hover {
+    background-color: #facc15;
+    color: #111;
+}
+
+/* ===== INFO PROMO ===== */
+.info-section {
+    background-color: #fff;
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.info-section h2 {
+    color: #111;
+    margin-bottom: 15px;
+}
+
+.info-section ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.info-section li {
+    margin: 8px 0;
+    font-size: 15px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: #111;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
